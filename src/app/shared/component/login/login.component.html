@@ -1,0 +1,47 @@
+
+
+<div class="container-fluid bg-img">
+    <div class="row">
+        <div class="col-md-6  offset-md-3">
+          <div class="card">
+            <div class="card-body">
+                <form action="" [formGroup]="loginForm" (ngSubmit)="submittedlogin()">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" formControlName="username" class="form-control">
+                        <ng-container *ngIf="f['username']?.invalid && f['username']?.touched" >
+                              <span *ngIf="f['username'].errors?.['required']" class="mt-4 d-block alert alert-danger w-50">
+                              Username is required
+                            </span>
+                            </ng-container>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" formControlName="email" class="form-control">
+                        <ng-container *ngIf="f['email']?.invalid && f['email']?.touched" >
+                              <span *ngIf="f['email'].errors?.['required']" class="mt-4 d-block alert alert-danger w-50">
+                              email is required
+                            </span>
+                            </ng-container>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="text" formControlName = 'password' class="form-control">
+                        <ng-container *ngIf="f['password']?.invalid && f['password']?.touched" >
+                              <span *ngIf="f['password'].errors?.['minlength']" class="mt-4 d-block alert alert-danger w-50">
+                                please enter min 8 character
+                            </span>
+                            <span *ngIf="f['password'].errors?.['maxlength']" class="mt-4 d-block alert alert-danger w-50">
+                               please enter max 8 character
+                              </span>
+                            </ng-container>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-info"disabled="loginForm.invalid">Log In</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>

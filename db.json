@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "name": "Pooja Nandage",
+      "email": "pooja@gmail.com",
+      "phone": "123467887",
+      "city": "latur",
+      "id": 2
+    },
+    {
+      "name": "Pooja Nandage",
+      "email": "nandagepooja@gmail.com",
+      "phone": "1234561786654",
+      "city": "latur udgir",
+      "id": 3
+    },
+    {
+      "name": "Pooja Nandage",
+      "email": "nandagepooja@gmail.com",
+      "phone": "1234561786654",
+      "city": "Udgir",
+      "id": 4
+    }
+  ]
+}

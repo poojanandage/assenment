@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+           <div class="card border-success bg-transparent my-5">
+            <div class="card-body">
+                <form [formGroup]="registerForm" (ngSubmit)="onsubmitted()">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" formControlName="name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" class="form-control" formControlName="email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone No.</label>
+                        <input type="text" class="form-control" formControlName="phone" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" formControlName="city" id="city">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-primary" [ngClass]="{'d-none': !flag}">Submit</button>
+                <button type="button" class="btn btn-primary" [ngClass]="{'d-none': flag}" (click)="onUpdateBtn()">Update Details</button>
+                    </div>
+                </form>
+            </div>
+           </div>
+        </div>
+    </div>
+</div>
