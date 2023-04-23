@@ -7,21 +7,21 @@ import { DashboardComponent } from './shared/component/dashboard/dashboard.compo
 import { AuthguardService } from './shared/service/authgardservice.service';
 
 const routes: Routes = [
-  {
-    path:'', redirectTo : 'login', pathMatch:'full'
-  },
-  {
-    path:'login', component: LoginComponent
-  },
-  {
-    path:'register', component: RegisterFormComponent
-  },
-  {
-    path:'list', component: ListComponent,canActivate:[AuthguardService]
-  }, 
-  {
-    path:'register/:id', component:RegisterFormComponent
-  }
+  // {
+  //   path:'', redirectTo : 'login', pathMatch:'full'
+  // },
+  // {
+  //   path:'login', component: LoginComponent
+  // },
+  // {
+  //   path:'register', component: RegisterFormComponent
+  // },
+  // {
+  //   path:'list', component: ListComponent,canActivate:[AuthguardService]
+  // }, 
+  // {
+  //   path:'register/:id', component:RegisterFormComponent
+  // }
 ];
 
 @NgModule({

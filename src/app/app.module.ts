@@ -9,6 +9,8 @@ import { DashboardComponent } from './shared/component/dashboard/dashboard.compo
 import { LoginComponent } from './shared/component/login/login.component';
 import { RegisterFormComponent } from './shared/component/register-form/register-form.component';
 import { ListComponent } from './shared/component/list/list.component';
+import { SidebarComponent } from './shared/component/sidebar/sidebar.component';
+import { MainDashboardComponent } from './shared/component/main-dashboard/main-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ListComponent } from './shared/component/list/list.component';
     DashboardComponent,
     LoginComponent,
     RegisterFormComponent,
-    ListComponent
+    ListComponent,
+    SidebarComponent,
+    MainDashboardComponent
   ],
   imports: [
     BrowserModule,

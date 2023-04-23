@@ -2,16 +2,35 @@
 
 <div class="container-fluid bg-light">
   <div class="row">
-    <div class="col-md-3">
-       <app-dashboard></app-dashboard>
+    <div class="col-md-1 bg-primary">
+      <app-sidebar></app-sidebar>
+       <!-- <app-dashboard></app-dashboard> -->
     </div>
-    <div class="col-md-7 offset-md-1  py-5">
-      <button class="btn-lg btn-outline-info my-2">
+    <div class="col-md-10 offset-md-1  py-5">
+      <!-- <button class="btn-lg btn-outline-info my-2">
         <a routerLink="/login">Log In</a>
     </button>
     <button class="btn-lg btn-outline-info my-2 mx-4">
         <a routerLink="/login">Log Out</a>
-    </button>
+    </button> -->
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <div class="searchbar">
+          <input type="search" name="" id="" class="form-control" placeholder="Search">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="">
+          <h6>Dashboard > Home</h6>
+        </div>
+        <div>
+          <h1>Welcome Joshua!</h1>
+        </div>
+      </div>
+    </div>
+    <app-main-dashboard></app-main-dashboard>
       <router-outlet></router-outlet>
     </div>
   </div>
